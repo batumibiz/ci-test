@@ -10,11 +10,4 @@ build:
       - composer install --ignore-platform-reqs --no-interaction
 
 checks:
-  php:
-    unused_variables: true
-    unused_properties: true
-    unused_parameters: true
-    unused_methods: true
-    unreachable_code: true
-    simplify_boolean_return: true
-    comparison_always_same_result: true
+  php: true
