@@ -9,7 +9,7 @@ use Test\Other\MyClass;
 class Test
 {
     /**
-     * @return bool
+     * @return string
      */
     public function foo()
     {
