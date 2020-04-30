@@ -1,13 +1,2 @@
-build:
-  nodes:
-    analysis:
-      tests:
-        override:
-          - php-scrutinizer-run
-
-  dependencies:
-    override:
-      - composer install --ignore-platform-reqs --no-interaction
-
 checks:
   php: true
