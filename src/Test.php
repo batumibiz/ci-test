@@ -9,6 +9,8 @@ use Test\Other\MyClass;
 class Test
 {
     /**
+     * Ошибка типов
+     *
      * @return string
      */
     public function foo()
