@@ -8,6 +8,8 @@ use Test\Other\MyClass;
 
 class Test
 {
+    private $unusedPrivateVariable;
+
     /**
      * Ошибка типов
      *
@@ -15,6 +17,7 @@ class Test
      */
     public function foo()
     {
+        $var = array(1, 2, 3);
         return false;
     }
 }

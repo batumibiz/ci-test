@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <ruleset name="mobiCMS coding standard">
     <description>mobiCMS coding standard</description>
+    <config name="installed_paths" value="../../slevomat/coding-standard"/>
+
+    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
 
     <!-- display progress -->
     <arg value="p"/>
