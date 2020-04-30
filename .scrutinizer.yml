@@ -1,13 +1,17 @@
 build:
   nodes:
     analysis:
-      environment:
-        php:
-          version: 7.4
-          compile_options: '--enable-gd --enable-openssl'
       tests:
         override:
           - php-scrutinizer-run
+          - phpcs-run
+
+  dependencies:
+    override:
+      - composer install --ignore-platform-reqs --no-interaction
+
+tools:
+  external_code_coverage: true
 
 checks:
   php: true

@@ -8,11 +8,20 @@ use Test\Other\MyClass;
 
 class Test
 {
+    private $unusedPrivateVariable;
+
     /**
-     * @return bool
+     * @param null $string
+     * @return int
      */
-    public function foo()
+    public function foo($string = null)
     {
-        return false;
+        $unusedVariable = array(1, 2, 3);
+        return $this->fakeHandler('string');
+    }
+
+    private function fakeHandler($string)
+    {
+        return $string;
     }
 }
