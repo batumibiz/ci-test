@@ -11,13 +11,12 @@ class Test
     private $unusedPrivateVariable;
 
     /**
-     * Ошибка типов
-     *
+     * @param null $string
      * @return string
      */
-    public function foo()
+    public function foo($string = null)
     {
         $var = array(1, 2, 3);
-        return false;
+        return '';
     }
 }
