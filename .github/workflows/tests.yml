@@ -45,7 +45,7 @@ jobs:
       - name: Code Climate test-coverage
         uses: paambaati/codeclimate-action@v2.6.0
         env:
-          CC_TEST_REPORTER_ID: ae0ad7fcffb6a9ba6894abcb665800e44cacef394d54b122e9a38d0d6b982341
+          CC_TEST_REPORTER_ID: 524cfd638c380310b6ce13f5f91ad282392377469e54a8e3c6005ca571413218
         with:
           coverageCommand: composer test-coverage
           debug: true
