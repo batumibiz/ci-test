@@ -36,12 +36,6 @@ jobs:
       - name: Install dependencies
         run: composer install --no-progress --no-suggest --prefer-dist --no-interaction --ignore-platform-reqs
 
-      - name: Scrutinizer test-coverage
-        run: |
-          composer test-coverage
-          wget https://scrutinizer-ci.com/ocular.phar
-          php ocular.phar code-coverage:upload --format=php-clover clover.xml
-
       - name: Code Climate test-coverage
         uses: paambaati/codeclimate-action@v2.6.0
         env:
