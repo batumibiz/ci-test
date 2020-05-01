@@ -17,7 +17,6 @@ class Test
     public function foo($string = null)
     {
         $var = array(1, 2, 3);
-
         return '';
     }
 }
