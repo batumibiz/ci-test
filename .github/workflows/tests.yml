@@ -36,8 +36,16 @@ jobs:
       - name: Install dependencies
         run: composer install --no-progress --no-suggest --prefer-dist --no-interaction --ignore-platform-reqs
 
-      - name: PhpUnit test-coverage
+      - name: Scrutinizer test-coverage
         run: |
           composer test-coverage
           wget https://scrutinizer-ci.com/ocular.phar
           php ocular.phar code-coverage:upload --format=php-clover clover.xml
+
+      - name: Code Climate test-coverage
+        uses: paambaati/codeclimate-action@v2.6.0
+        env:
+          CC_TEST_REPORTER_ID: ae0ad7fcffb6a9ba6894abcb665800e44cacef394d54b122e9a38d0d6b982341
+        with:
+          coverageCommand: composer test-coverage
+          debug: true
