@@ -1,5 +1,5 @@
-Данный пакет используется исключительно для экспериментов с CI сервисами.  
-В PHP классах преднамеренно допущены некоторые не критичные ошибки.
+This package is used exclusively for experiments with CI services.  
+Some non-critical errors have been deliberately made in PHP classes.
 
 ## GitHub Actions
 ![PHP-CI](https://github.com/batumibiz/ci-test/workflows/PHP-CI/badge.svg)
