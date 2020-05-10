@@ -4,6 +4,9 @@ namespace Test\Other;
 
 class MyClass
 {
+    /**
+     * @return int
+     */
     public function bar()
     {
         return '';
