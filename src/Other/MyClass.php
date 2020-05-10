@@ -8,4 +8,9 @@ class MyClass
     {
         return '';
     }
+
+    private function unusedMethod()
+    {
+        return false;
+    }
 }
